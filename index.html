@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinity Bookstore - Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1><i class="fas fa-book-open"></i> Infinity Bookstore</h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="nav-right">
+                    <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">
+                        <i class="fas fa-moon icon-moon"></i>
+                        <i class="fas fa-sun icon-sun"></i>
+                        <span class="toggle-circle"></span>
+                    </button>
+                    <div class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i> <span id="cart-count" class="cart-count">0</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div id="greeting" class="greeting"></div>
+                <div id="current-date" class="current-date"></div>
+                <h2>Welcome to Infinity Bookstore</h2>
+                <p>Your Community Bookstore in Kangema Town</p>
+                <a href="products.html" class="btn btn-primary"><i class="fas fa-book-reader"></i> Browse Books</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Books Section -->
+    <section class="featured">
+        <div class="container">
+            <h2 class="section-title">Featured Books</h2>
+            <div class="products-grid">
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/book1.jpg" alt="The River and the Source" onerror="this.src='https://via.placeholder.com/300x400?text=The+River+and+the+Source'">
+                    </div>
+                    <div class="product-info">
+                        <h3>The River and the Source</h3>
+                        <p class="author">by Margaret Ogola</p>
+                        <p class="description">A story of four generations of Kenyan women.</p>
+                        <div class="product-footer">
+                            <span class="price">KSh 850</span>
+                            <button class="btn btn-cart" onclick="addToCart('The River and the Source', 850)"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/book6.jpg" alt="Unbowed" onerror="this.src='https://via.placeholder.com/300x400?text=Unbowed'">
+                    </div>
+                    <div class="product-info">
+                        <h3>Unbowed</h3>
+                        <p class="author">by Wangari Maathai</p>
+                        <p class="description">The inspiring memoir of Nobel Peace Prize winner.</p>
+                        <div class="product-footer">
+                            <span class="price">KSh 950</span>
+                            <button class="btn btn-cart" onclick="addToCart('Unbowed', 950)"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/book7.jpg" alt="Blossoms of the Savannah" onerror="this.src='https://via.placeholder.com/300x400?text=Blossoms+of+the+Savannah'">
+                    </div>
+                    <div class="product-info">
+                        <h3>Blossoms of the Savannah</h3>
+                        <p class="author">by Henry ole Kulet</p>
+                        <p class="description">Two sisters navigating tradition and modernity.</p>
+                        <div class="product-footer">
+                            <span class="price">KSh 750</span>
+                            <button class="btn btn-cart" onclick="addToCart('Blossoms of the Savannah', 750)"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews-section">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <p class="page-subtitle">Trusted by the Kangema community</p>
+            <div class="reviews-grid">
+                <article class="review-card">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">Infinity Bookstore is a blessing to Kangema! I found all my children's school textbooks here at very fair prices. Brenda is so helpful and always recommends the best books. Highly recommend!</p>
+                    <div class="review-author">
+                        <div class="review-avatar">MW</div>
+                        <div class="review-info">
+                            <h4>Mary Wanjiku</h4>
+                            <span><i class="fas fa-map-marker-alt"></i> Kangema Town</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="review-card">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">As a teacher at Kangema Boys, I always send my students here. The collection of Kenyan literature is amazing! 'The River and the Source' and 'Blossoms of the Savannah' are always in stock.</p>
+                    <div class="review-author">
+                        <div class="review-avatar">JK</div>
+                        <div class="review-info">
+                            <h4>James Kamau</h4>
+                            <span><i class="fas fa-map-marker-alt"></i> Kangema Boys High School</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="review-card">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="review-text">Finally, a quality bookstore in our town! No more traveling to Nairobi for good books. The WhatsApp ordering is so convenient. They even deliver within Kangema!</p>
+                    <div class="review-author">
+                        <div class="review-avatar">PN</div>
+                        <div class="review-info">
+                            <h4>Peter Njoroge</h4>
+                            <span><i class="fas fa-map-marker-alt"></i> Kiamuturi Village</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="review-card">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">I bought 'Unbowed' by Wangari Maathai here and it changed my life! The bookstore has a wonderful selection of inspirational African literature. Keep it up Brenda!</p>
+                    <div class="review-author">
+                        <div class="review-avatar">GW</div>
+                        <div class="review-info">
+                            <h4>Grace Wairimu</h4>
+                            <span><i class="fas fa-map-marker-alt"></i> Gacharage</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Infinity Bookstore</h3>
+                    <p>Your trusted community bookstore</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p>Brenda Kagure Mwangi</p>
+                    <p><a href="https://wa.me/254797370221" target="_blank" class="footer-link"><i class="fab fa-whatsapp"></i> 0797370221</a></p>
+                    <p><a href="mailto:brenda24.mwangi@student.cuk.ac.ke" class="footer-link"><i class="fas fa-envelope"></i> Email Us</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i> Kangema Town, Opposite Equity Bank</p>
+                    <p class="footer-social">@infinitybookstore_kangema</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Infinity Bookstore. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
