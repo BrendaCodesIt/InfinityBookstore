@@ -59,19 +59,7 @@ To add your own book cover images:
 
 ## 🌐 Deployment Options
 
-### Option 1: GitHub Pages
-1. Create a GitHub repository
-2. Upload all files to the repository
-3. Go to Settings → Pages
-4. Select branch and save
-5. Your site will be live at: `https://yourusername.github.io/repository-name`
-
-### Option 2: Netlify
-1. Go to [netlify.com](https://netlify.com)
-2. Drag and drop your project folder
-3. Site will be deployed instantly
-
-### Option 3: Vercel
+### Vercel
 1. Go to [vercel.com](https://vercel.com)
 2. Import your GitHub repository or upload files
 3. Deploy with one click
@@ -173,6 +161,6 @@ This project demonstrates:
 
 ---
 
-**Created by:** [Your Name]  
+**Created by:** Brenda Kagure Mwangi  
 **Date:** January 2026  
 **Assignment:** Web Development - Mini E-Commerce Website
