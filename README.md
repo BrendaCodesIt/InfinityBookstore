@@ -64,21 +64,6 @@ To add your own book cover images:
 2. Import your GitHub repository or upload files
 3. Deploy with one click
 
-## 📦 Submitting Your Project
-
-1. Create a ZIP file containing all files:
-   - index.html
-   - products.html
-   - about.html
-   - contact.html
-   - style.css
-   - script.js
-   - images/ folder
-   - README.md
-
-2. Deploy to one of the hosting platforms mentioned above
-
-3. Include the live demo link in your submission
 
 ## ✨ Key Features Demonstrated
 
@@ -134,18 +119,7 @@ To add your own book cover images:
 - JavaScript (ES6+)
 - No external libraries or frameworks
 
-## 📝 Assignment Requirements Checklist
-
-- ✅ Three pages (Products, Contact, About) + Home page
-- ✅ Semantic HTML tags
-- ✅ Consistent color scheme and typography
-- ✅ Hover effects and transitions
-- ✅ Flexbox/Grid for layout
-- ✅ Form validation (email with "@")
-- ✅ Shopping cart with counter
-- ✅ Dynamic greeting and date
-- ✅ Theme toggle (light/dark mode)
-- ✅ All files organized and ready for deployment
+#
 
 ## 🎓 Learning Outcomes
 
